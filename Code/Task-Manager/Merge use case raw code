@@ -1,0 +1,33 @@
+For TM.java
+
+case "Merge" : { TMModel.mergeTask(args[1], args[2], args[3]); break;}
+
+For TMModel.java
+
+///To merge two tasks, we delete all tasks, and rename the two tasks chosen into the new name, and add up time.
+public boolean mergeTask(String oldTask1, String oldTask2, String newTaskName)
+{
+  try{
+    log.deleteContent();
+    for (TaskLine taskLine:entries) {
+    if (taskLine.name.equals(oldTask1) || taskLine.name.equals(oldTask2))
+        taskLine.name = newTaskName;   
+        
+        ///Pretty sure this does not work to add up the total time, will need help on this.
+        taskElapsedTime(newTaskName) = taskElapsedTime(oldTask1) + taskElapsedTime(oldTask2);
+        
+    log.writeLine(taskLine.toString());
+    }
+        
+  }catch(Exception e){return false;}
+  return true;
+}
+
+-----------------------------------------------------------------------------------------
+public boolean mergeTask(String oldTask1, String oldTask2, String newTaskName) {
+        try {
+            renameTask(oldTask1, newTaskName);
+            renameTask(oldTask2, newTaskName);
+        } catch (Exception e) {return false;}
+        return true;
+    }

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Task Manager</string>
+    <string name="action_settings">Refresh</string>
+    <string name="developerTitle">Developer</string>
+    <string name="taskNameHint">Enter Task Name</string>
+    <string name="descriptionHint">Enter Description</string>
+    <string name="submit">Submit</string>
+    <string name="welcomeTitle">Welcome</string>
+    <string name="title_activity_developer">DeveloperActivity</string>
+    <string name="title_activity_manager">ManagerActivity</string>
+    <string name="managerTitle">Manager</string>
+    <string name="title_activity_summary">SummaryActivity</string>
+    <string name="notify">Notify</string>
+    <string name="title_activity_notification">Notification</string>
+    <string name="Content">Enter Content Here</string>
+    <string name="toWho">Enter Recipient</string>
+    <string name="title_activity_stats">StatsActivity</string>
+    <string name="complete">Complete</string>
+    <string name="refreshing_application">Refreshing Application...</string>
+    <string name="Wait">Please Wait...</string>
+    <string name="title_activity_request_help">RequestHelp</string>
+    <string name="HelpTo">To:</string>
+    <string name="markedComplete">Task has been Completed</string>
+    <string name="title_activity_test">Test</string>
+    <string name="tasks">Tasks</string>
+    <string name="groups">Groups</string>
+    <string name="title_activity_text_view_screen">textViewScreen</string>
+</resources>
